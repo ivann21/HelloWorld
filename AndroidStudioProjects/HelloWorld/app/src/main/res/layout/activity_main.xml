@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/operationsTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -32,25 +32,29 @@
                 android:id="@+id/acButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AC" />
+                android:text="AC"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/equalsButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="=" />
+                android:text="="
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/divButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="/" />
+                android:text="/"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/multiplyButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="*" />
+                android:text="*"
+                style="?android:attr/buttonBarButtonStyle" />
         </TableRow>
 
         <TableRow
@@ -61,25 +65,29 @@
                 android:id="@+id/sevenButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7" />
+                android:text="7"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/eightButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8" />
+                android:text="8"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/nineButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9" />
+                android:text="9"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/restButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="-"
+                style="?android:attr/buttonBarButtonStyle" />
         </TableRow>
 
         <TableRow
@@ -90,25 +98,29 @@
                 android:id="@+id/fourButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4" />
+                android:text="4"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/fiveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5" />
+                android:text="5"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/sixButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6" />
+                android:text="6"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/sumButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="+"
+                style="?android:attr/buttonBarButtonStyle" />
         </TableRow>
 
         <TableRow
@@ -119,25 +131,29 @@
                 android:id="@+id/oneButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1" />
+                android:text="1"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/twoButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2" />
+                android:text="2"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/threeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="3"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/zeroButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0" />
+                android:text="0"
+                style="?android:attr/buttonBarButtonStyle" />
         </TableRow>
     </TableLayout>
 </LinearLayout>
