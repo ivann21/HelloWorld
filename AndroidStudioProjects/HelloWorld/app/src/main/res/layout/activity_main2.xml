@@ -6,32 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="no binario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/radioButton2"
-        app:layout_constraintTop_toTopOf="@+id/radioButton2" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Mujer"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
     <RadioGroup
         android:id="@+id/sexo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="274dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:id="@+id/nonBinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="no binario" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/editTextText"
@@ -58,6 +60,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextText"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
@@ -81,6 +85,7 @@
         android:enabled="false"
         android:hint="email"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextText"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
@@ -105,14 +110,28 @@
         app:layout_constraintStart_toStartOf="@+id/toggleButton"
         app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/helloButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hombre"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioButton2" />
+        android:layout_marginTop="20dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/sexo"
+        app:layout_constraintStart_toStartOf="@+id/sexo"
+        app:layout_constraintTop_toBottomOf="@+id/sexo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
